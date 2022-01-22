@@ -11,7 +11,6 @@ public class CTFT {
 	    double FT = CT * 1.8 + 32;
 		
 		System.out.println("섭씨"+CT+"도는 화씨"+(int)FT+"도 입니다."); //FT를 int형으로 캐스팅 했음
-
+		
 	}
-
 }

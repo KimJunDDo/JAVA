@@ -14,6 +14,6 @@ public class BMI {
 		double BMI = weight / (height * height) * 10000;
 		
 		System.out.println("체질량지수(BMI) = "+BMI);
-
+		
 	}
 }

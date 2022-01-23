@@ -1,29 +1,35 @@
-package Practice;
+package practice;
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Scanner;
 
 public class MaxMinAvg {
 
 	public static void main(String[] args) {
 		Scanner num = new Scanner(System.in);
-		System.out.println("¾çÀÇ Á¤¼öµéÀ» ÀÔ·ÂÇÏ½Ã¿À.(ÀÔ·ÂÀÇ ³¡Àº -1)");
+		System.out.println("ì–‘ì˜ ì •ìˆ˜ë“¤ì„ ì…ë ¥í•˜ì‹œì˜¤.(ì…ë ¥ì˜ ëì€ -1)");
 		
 		boolean run = true;
-		int sum = 0;
+		ArrayList<Integer> list = new ArrayList<Integer>();
 		
+		double sum = 0;
 		do {
 			int a = num.nextInt();
-			int[] A = new int [a];
 
 			if(a != -1) {
-				for(int i=0; i)
+				list.add(a);
+				sum += a;
 			}
 			else if(a == -1) {	
 				run = false;
 			}
 
 		} while(run);
-
-		System.out.println("Æò±Õ°ª"+sum+"ÀÔ´Ï´Ù.");
+		
+		int max = Collections.max(list);
+		int min = Collections.min(list);
+		double avg = sum / list.size();
+		
+		System.out.println("ìµœëŒ€ê°’="+max+", ìµœì†Œê°’="+min+", í‰ê· ê°’="+avg);
 	}
-
 }

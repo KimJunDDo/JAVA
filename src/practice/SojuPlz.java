@@ -4,22 +4,27 @@ import javax.swing.JOptionPane;
 public class SojuPlz {
 
 	public static void main(String[] args) {
-		String Pd = JOptionPane.showInputDialog("´Ü¾î¸¦ ÀÔ·ÂÇÏ¼¼¿ä:");
+		String Pd = JOptionPane.showInputDialog("ë‹¨ì–´ë¥¼ ìž…ë ¥í•˜ì„¸ìš”:");
 		String result = Pd.replace(" ", "");
+		
 		int length = result.length();
 		boolean isPalin = true;
-		int j = 0;
 		
-		for (int i=0; j=length-1; i<j; i++, j--) {
-			if(result.charAt(i) != result.charAt(j)) {
+		for (int i=0, j=length-1; i<j; i++, j--) {
+			if (result.charAt(i) != result.charAt(j)) {
 				isPalin = false;
 				break;
 			}
 		}
-		JOptionPane.showMessageDialog(null, "Ã¼Áú·®Áö¼ö(BMI) = "+result);
 		
-		System.exit(0);
+		if (isPalin) {
+			JOptionPane.showMessageDialog(null, "\""+Pd+"\"ëŠ” íšŒë¬¸ìž…ë‹ˆë‹¤.");
+			System.exit(0);
+		}
+		else {
+			JOptionPane.showMessageDialog(null, "\""+Pd+"\"ëŠ” íšŒë¬¸ì´ ì•„ë‹™ë‹ˆë‹¤.");
+			System.exit(0);
+		}
 
 	}
-
 }

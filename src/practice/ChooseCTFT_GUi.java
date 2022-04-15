@@ -5,33 +5,38 @@ public class ChooseCTFT_GUi {
 
 	public static void main(String[] args) {
 		
-		String str = JOptionPane.showInputDialog("º¯È¯ÇÒ ¿Âµµ¸¦ ÀÔ·ÂÇÏ½Ã¿À.\n(¼·¾¾´Â ¿Âµµ µÚ¿¡ c³ªC·Î,È­¾¾´Â f³ªF·Î Ç¥½Ã)");
+		String str = JOptionPane.showInputDialog("ë³€í™˜í•  ì˜¨ë„ë¥¼ ì…ë ¥í•˜ì‹œì˜¤.\n(ì„­ì”¨ëŠ” ì˜¨ë„ ë’¤ì— cë‚˜Cë¡œ,í™”ì”¨ëŠ” fë‚˜Fë¡œ í‘œì‹œ)");
 		if(str.indexOf("c") != -1) {
 			String temp = str.substring(0, str.length()-1);
 			int CT = Integer.parseInt(temp);
 			double FT = CT * 1.8 + 32;
-			JOptionPane.showMessageDialog(null, "¼·¾¾ "+CT+"µµ´Â È­¾¾ "+ (int)FT+"µµÀÔ´Ï´Ù");
-			
+			JOptionPane.showMessageDialog(null, "ì„­ì”¨ "+CT+"ë„ëŠ” í™”ì”¨ "+ (int)FT+"ë„ì…ë‹ˆë‹¤");
+			System.exit(0);
 		}
 		else if(str.indexOf("C") != -1) {
 			String temp = str.substring(0, str.length()-1);
 			int CT = Integer.parseInt(temp);
 			double FT = CT * 1.8 + 32;
-			JOptionPane.showMessageDialog(null, "¼·¾¾ "+CT+"µµ´Â È­¾¾ "+ (int)FT+"µµÀÔ´Ï´Ù");
+			JOptionPane.showMessageDialog(null, "ì„­ì”¨ "+CT+"ë„ëŠ” í™”ì”¨ "+ (int)FT+"ë„ì…ë‹ˆë‹¤");
+			System.exit(0);
 		}
 		else if(str.indexOf("f") != -1) {
 			String temp = str.substring(0, str.length()-1);
 			int FT = Integer.parseInt(temp);
 			double CT = (FT - 32) / 1.8;
-			JOptionPane.showMessageDialog(null, "È­¾¾ "+FT+"µµ´Â ¼·¾¾ "+ (int)CT+"µµÀÔ´Ï´Ù");
+			JOptionPane.showMessageDialog(null, "í™”ì”¨ "+FT+"ë„ëŠ” ì„­ì”¨ "+ (int)CT+"ë„ì…ë‹ˆë‹¤");
+			System.exit(0);
 		}
 		else if(str.indexOf("F") != -1) {
 			String temp = str.substring(0, str.length()-1);
 			int FT = Integer.parseInt(temp);
 			double CT = (FT - 32) / 1.8;
-			JOptionPane.showMessageDialog(null, "È­¾¾ "+FT+"µµ´Â ¼·¾¾ "+ (int)CT+"µµÀÔ´Ï´Ù");
+			JOptionPane.showMessageDialog(null, "í™”ì”¨ "+FT+"ë„ëŠ” ì„­ì”¨ "+ (int)CT+"ë„ì…ë‹ˆë‹¤");
+			System.exit(0);
 		}
-		else
-			JOptionPane.showMessageDialog(null, "Àß¸øµÈ ¿Âµµ ÀÔ·ÂÀÔ´Ï´Ù.");
+		else {
+			JOptionPane.showMessageDialog(null, "ì˜ëª»ëœ ì˜¨ë„ ì…ë ¥ì…ë‹ˆë‹¤.");
+			System.exit(0);
+		}
 	}
 }

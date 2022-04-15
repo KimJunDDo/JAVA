@@ -13,6 +13,7 @@ public class ChooseCTFT_GUi {
 			JOptionPane.showMessageDialog(null, "섭씨 "+CT+"도는 화씨 "+ (int)FT+"도입니다");
 			System.exit(0);
 		}
+		
 		else if(str.indexOf("C") != -1) {
 			String temp = str.substring(0, str.length()-1);
 			int CT = Integer.parseInt(temp);
@@ -20,6 +21,7 @@ public class ChooseCTFT_GUi {
 			JOptionPane.showMessageDialog(null, "섭씨 "+CT+"도는 화씨 "+ (int)FT+"도입니다");
 			System.exit(0);
 		}
+		
 		else if(str.indexOf("f") != -1) {
 			String temp = str.substring(0, str.length()-1);
 			int FT = Integer.parseInt(temp);
@@ -27,6 +29,7 @@ public class ChooseCTFT_GUi {
 			JOptionPane.showMessageDialog(null, "화씨 "+FT+"도는 섭씨 "+ (int)CT+"도입니다");
 			System.exit(0);
 		}
+		
 		else if(str.indexOf("F") != -1) {
 			String temp = str.substring(0, str.length()-1);
 			int FT = Integer.parseInt(temp);
@@ -34,6 +37,7 @@ public class ChooseCTFT_GUi {
 			JOptionPane.showMessageDialog(null, "화씨 "+FT+"도는 섭씨 "+ (int)CT+"도입니다");
 			System.exit(0);
 		}
+		
 		else {
 			JOptionPane.showMessageDialog(null, "잘못된 온도 입력입니다.");
 			System.exit(0);

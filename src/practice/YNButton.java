@@ -1,3 +1,4 @@
+//과제 5번
 package practice;
 
 import java.awt.Color;

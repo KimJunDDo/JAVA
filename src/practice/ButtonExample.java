@@ -16,21 +16,21 @@ public class ButtonExample extends JFrame {
 		
 		public void actionPerformed(ActionEvent e) {
 			if (e.getSource() == btn) {
-				(getContentPane()).setBackground(Color.black);
-				btn.setText("¹öÆ°ÀÌ ´­·È½À´Ï´Ù");
+				(getContentPane()).setBackground(Color.darkGray);
+				btn.setText("ë²„íŠ¼ì´ ëˆŒë ¸ìŠµë‹ˆë‹¤");
 			}
 		}
 	}
 	
 	public ButtonExample() {
 		setSize(300, 200);
-		setTitle("¹öÆ° ÅØ½ºÆ® ¿¹Á¦");
+		setTitle("ë²„íŠ¼ í…ìŠ¤íŠ¸ ì˜ˆì œ");
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 		
 		Container cPane = getContentPane();
 		cPane.setBackground(Color.WHITE);
 		cPane.setLayout(new FlowLayout());
-		btn = new JButton("¹öÆ°À» ´©¸£½Ã¿À");
+		btn = new JButton("ë²„íŠ¼ì„ ëˆ„ë¥´ì‹œì˜¤");
 		
 		ButtonListener listener = new ButtonListener();
 		btn.addActionListener(listener);
